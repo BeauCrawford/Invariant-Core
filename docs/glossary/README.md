@@ -16,6 +16,9 @@
 * **INVALID_STATE**
   A state that violates one or more constraints.
 
+* **INVALIDITY**
+  Failure of a state, interpretation, transition, or configuration to survive constraint enforcement.
+
 * **BOUNDARY**
   A defined separation between internal and external state spaces.
 
@@ -317,13 +320,16 @@
 ## 16. Truth & Reality
 
 * **TRUTH**
-  The set of states that survive all constraint enforcement.
+  The set of states that survive complete constraint enforcement across all layers.
 
 * **GLOBAL_TRUTH**
   Truth consistent across the entire system.
 
 * **LOCAL_TRUTH**
   Truth valid only within a limited context.
+
+* **FALSE**
+  Detected invalidity relative to the active invariant set.
 
 * **REALITY_CONSTRAINT**
   Constraints imposed by physical or ontological limits.
