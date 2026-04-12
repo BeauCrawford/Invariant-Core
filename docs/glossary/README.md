@@ -7,6 +7,9 @@
 * **INVARIANT_STRUCTURE**
   A bounded system defined by constraints where only invariant-preserving states can survive.
 
+* **INVARIANT_SHELL**
+  The upstream parent structure that all downstream invariants must preserve or strengthen.
+
 * **STATE_SPACE**
   The complete set of all possible states the system could represent.
 
@@ -21,6 +24,9 @@
 
 * **BOUNDARY**
   A defined separation between internal and external state spaces.
+
+* **SURVIVAL_PATH**
+  A path through which a state can persist, propagate, leak, or re-enter the system.
 
 * **INTERIOR**
   The region within the boundary where invariant evaluation occurs.
@@ -55,6 +61,9 @@
 
 * **CONSTRAINT_DEPTH**
   The relative position in the stack where constraints become less negotiable and more intrinsic.
+
+* **MONOTONIC_CONTAINMENT**
+  The rule that downstream invariants may refine or strengthen upstream invariants but must not weaken or contradict them.
 
 ---
 
@@ -96,6 +105,9 @@
 
 * **SEAL_FAILURE**
   The event where invalid states cross a boundary and persist.
+
+* **BYPASS_PATH**
+  A path that allows a state to avoid required constraint or boundary enforcement.
 
 * **SEAL_ALIGNMENT**
   Consistency of sealing rules across boundaries and layers.
@@ -340,6 +352,9 @@
 
 * **INVARIANT**
   A property that remains unchanged under all valid transformations.
+
+* **DOWNSTREAM_INVARIANT**
+  A specialized invariant that refines the upstream invariant shell without weakening it.
 
 * **INVARIANT_PRESERVATION**
   Maintenance of invariants across operations.
